@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  
+<link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Figtree:ital,wght@0,300..900;1,300..900&family=Fraunces:ital,opsz,wght@0,9..144,100..900;1,9..144,100..900&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Manrope:wght@200..800&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Outfit:wght@100..900&family=Overpass:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100..900;1,100..900&family=Rubik:ital,wght@0,300..900;1,300..900&family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&family=Young+Serif&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">  
+<title>Frontend Mentor | Interactive rating component</title>
+
+
+</head>
+<body>
+<main class="container">
+<div class="card" id="card_visible">
+<img class="icon_star" src="/images/icon-star.svg" alt="star">
+<h2> How did we do?</h2>
+<p>Please let us know how we did with your support request. All feedback is appreciated 
+  to help us improve our offering!</p>
+  <div class="card_button">
+    <button class="button" id="button1">1</button>
+    <button class="button" id="button2" >2</button>
+    <button class="button" id="button3" >3</button>
+    <button class="button" id="button4" >4</button>
+    <button class="button" id="button5" >5</button>
+  </div>
+<button id="card_submit">SUBMIT</button>
+</div>
+
+                  <!-- card_hidden -->
+
+<div class="card" id="card_hidden"  >
+<img class="card_illustration" src="/images/illustration-thank-you.svg" alt="thank you">
+<div class="card_change">
+  <p>You selected <span id="hidden_change"> 4 </span> out of 5</p>
+</div>
+<h2 class="card_thank">Thank you!</h2>
+<span class="card_text">We appreciate you taking the time to give a rating. If you ever need more support, don’t hesitate to get in touch!</span>
+</div>
+</main>
+
+<script src="app.js"></script>
+ </body>
+</html>
